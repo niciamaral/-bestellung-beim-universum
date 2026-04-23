@@ -720,7 +720,7 @@ function eio(t){return t<.5?2*t*t:-1+(4-2*t)*t;}
 function finish(){
   stopEMDR();
   toast('Bestellung eingegangen ✨');
-  setTimeout(()=>goTo('upsell'),900);
+  setTimeout(()=>{goTo('upsell');window.scrollTo(0,0);},900);
 }
 
 function repeatSession(){
